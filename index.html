@@ -13,7 +13,7 @@
 <body>
     <div class="container" id="root">
         <h1>Lista di mail:</h1>
-        <ul>
+        <ul v-if="mailList.length == 10">
             <li v-for="(mail, index) in mailList" :key="index">{{mail}}</li>
         </ul>
     </div>
