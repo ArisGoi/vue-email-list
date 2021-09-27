@@ -20,17 +20,45 @@ h1{
     color: lightsalmon;
 }
 
-ul{
+.ul-container{
     margin: 20px 0;
     padding: 40px;
     border-radius: 20px;
     background-color: lightsalmon;
+}
+
+ul.show{
+    display: block;
+}
+ul{
+    display: none;
     list-style-type: none;
     font-size: 20px;
     font-weight: 500;
     color: white;
 }
-
 li{
     margin: 15px 0;
+}
+
+/* loading */
+span{
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+span i{
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    animation: spin 2s infinite linear;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
