@@ -49,9 +49,6 @@ span{
 }
 span i{
     margin-left: 20px;
-    font-size: 25px;
-    font-weight: 500;
-    color: white;
     animation: spin 2s infinite linear;
 }
 @keyframes spin {

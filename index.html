@@ -17,7 +17,7 @@
             <ul v-if="mailList.length == 30" :class="mailList.length == 30 ? 'show' : null">
                 <li v-for="(mail, index) in mailList" :key="index">{{mail}}</li>
             </ul>
-            <span v-else>Caricamento...<i class="fas fa-spinner"></i></span>
+            <span v-else><i class="fas fa-spinner"></i> Caricamento...</span>
         </div>
     </div>
 
