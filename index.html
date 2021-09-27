@@ -11,8 +11,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="contaier" id="root">
-
+    <div class="container" id="root">
+        <h1>Lista di mail:</h1>
+        <ul>
+            <li v-for="(mail, index) in mailList" :key="index">{{mail}}</li>
+        </ul>
     </div>
 
     <!-- development version, includes helpful console warnings -->
